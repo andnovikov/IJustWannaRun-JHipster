@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="events">
+            <h2><span jhiTranslate="iJustWannaRunApp.events.detail.title">Events</span> {{events.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="iJustWannaRunApp.events.name">Name</span></dt>
+                <dd>
+                    <span>{{events.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.date">Date</span></dt>
+                <dd>
+                    <span>{{events.date}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.regStart">Reg Start</span></dt>
+                <dd>
+                    <span>{{events.regStart}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.regEnd">Reg End</span></dt>
+                <dd>
+                    <span>{{events.regEnd}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'iJustWannaRunApp.EventStatus.' + events.status}}">{{events.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.kind">Kind</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'iJustWannaRunApp.EventKind.' + events.kind}}">{{events.kind}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.url">Url</span></dt>
+                <dd>
+                    <span>{{events.url}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.events.distances">Distances</span></dt>
+                <dd>
+                    <div *ngIf="events.distances">
+                        <a [routerLink]="['/distance', events.distances?.id, 'view']">{{events.distances?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/events', events.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

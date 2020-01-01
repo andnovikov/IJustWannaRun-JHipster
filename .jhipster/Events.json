@@ -1,0 +1,60 @@
+{
+    "name": "Events",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "regStart",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "regEnd",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "EventStatus",
+            "fieldValues": "PLAN,OPEN,CLOSED,COMPLETE"
+        },
+        {
+            "fieldName": "kind",
+            "fieldType": "EventKind",
+            "fieldValues": "RUNNING,SWIMMING,BIKE,TRIATHLON,SKIING"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "location",
+            "otherEntityRelationshipName": "events",
+            "relationshipName": "location"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "distance",
+            "otherEntityRelationshipName": "events",
+            "relationshipName": "distances",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200101205047",
+    "entityTableName": "events",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

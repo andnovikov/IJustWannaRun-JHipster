@@ -1,0 +1,24 @@
+{
+  "iJustWannaRunApp": {
+    "userRegistration": {
+      "home": {
+        "title": "User Registrations",
+        "createLabel": "Создать новый User Registration",
+        "createOrEditLabel": "Создать или отредактировать User Registration",
+        "notFound": "No User Registrations found"
+      },
+      "created": "Новый User Registration создан с идентификатором {{ param }}",
+      "updated": "User Registration обновлен с идентификатором {{ param }}",
+      "deleted": "User Registration удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить User Registration {{ id }}?"
+      },
+      "detail": {
+        "title": "User Registration"
+      },
+      "regDate": "Reg Date",
+      "regNumber": "Reg Number",
+      "event": "Event"
+    }
+  }
+}

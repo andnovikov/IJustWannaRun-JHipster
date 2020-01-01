@@ -1,0 +1,30 @@
+{
+  "iJustWannaRunApp": {
+    "events": {
+      "home": {
+        "title": "Events",
+        "createLabel": "Create a new Events",
+        "createOrEditLabel": "Create or edit a Events",
+        "notFound": "No Events found"
+      },
+      "created": "A new Events is created with identifier {{ param }}",
+      "updated": "A Events is updated with identifier {{ param }}",
+      "deleted": "A Events is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Events {{ id }}?"
+      },
+      "detail": {
+        "title": "Events"
+      },
+      "name": "Name",
+      "date": "Date",
+      "regStart": "Reg Start",
+      "regEnd": "Reg End",
+      "status": "Status",
+      "kind": "Kind",
+      "url": "Url",
+      "location": "Location",
+      "distances": "Distances"
+    }
+  }
+}
