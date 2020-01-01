@@ -1,0 +1,25 @@
+{
+  "iJustWannaRunApp": {
+    "distance": {
+      "home": {
+        "title": "Distances",
+        "createLabel": "Создать новый Distance",
+        "createOrEditLabel": "Создать или отредактировать Distance",
+        "notFound": "No Distances found"
+      },
+      "created": "Новый Distance создан с идентификатором {{ param }}",
+      "updated": "Distance обновлен с идентификатором {{ param }}",
+      "deleted": "Distance удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Distance {{ id }}?"
+      },
+      "detail": {
+        "title": "Distance"
+      },
+      "length": "Length",
+      "limit": "Limit",
+      "events": "Events",
+      "userRegistration": "User Registration"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "iJustWannaRunApp": {
+    "events": {
+      "home": {
+        "title": "Events",
+        "createLabel": "Создать новый Events",
+        "createOrEditLabel": "Создать или отредактировать Events",
+        "notFound": "No Events found"
+      },
+      "created": "Новый Events создан с идентификатором {{ param }}",
+      "updated": "Events обновлен с идентификатором {{ param }}",
+      "deleted": "Events удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Events {{ id }}?"
+      },
+      "detail": {
+        "title": "Events"
+      },
+      "name": "Name",
+      "date": "Date",
+      "regStart": "Reg Start",
+      "regEnd": "Reg End",
+      "status": "Status",
+      "kind": "Kind",
+      "url": "Url",
+      "location": "Location",
+      "distances": "Distances"
+    }
+  }
+}

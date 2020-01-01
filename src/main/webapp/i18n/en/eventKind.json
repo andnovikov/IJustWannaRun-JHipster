@@ -1,0 +1,12 @@
+{
+  "iJustWannaRunApp": {
+    "EventKind": {
+      "null": "",
+      "RUNNING": "RUNNING",
+      "SWIMMING": "SWIMMING",
+      "BIKE": "BIKE",
+      "TRIATHLON": "TRIATHLON",
+      "SKIING": "SKIING"
+    }
+  }
+}

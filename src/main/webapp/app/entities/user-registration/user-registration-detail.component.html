@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="userRegistration">
+            <h2><span jhiTranslate="iJustWannaRunApp.userRegistration.detail.title">User Registration</span> {{userRegistration.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="iJustWannaRunApp.userRegistration.regDate">Reg Date</span></dt>
+                <dd>
+                    <span>{{userRegistration.regDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="iJustWannaRunApp.userRegistration.regNumber">Reg Number</span></dt>
+                <dd>
+                    <span>{{userRegistration.regNumber}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/user-registration', userRegistration.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

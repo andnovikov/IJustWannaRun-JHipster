@@ -1,0 +1,25 @@
+{
+  "iJustWannaRunApp": {
+    "distance": {
+      "home": {
+        "title": "Distances",
+        "createLabel": "Create a new Distance",
+        "createOrEditLabel": "Create or edit a Distance",
+        "notFound": "No Distances found"
+      },
+      "created": "A new Distance is created with identifier {{ param }}",
+      "updated": "A Distance is updated with identifier {{ param }}",
+      "deleted": "A Distance is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Distance {{ id }}?"
+      },
+      "detail": {
+        "title": "Distance"
+      },
+      "length": "Length",
+      "limit": "Limit",
+      "events": "Events",
+      "userRegistration": "User Registration"
+    }
+  }
+}

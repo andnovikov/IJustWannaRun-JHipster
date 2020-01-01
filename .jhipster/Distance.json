@@ -1,0 +1,38 @@
+{
+    "name": "Distance",
+    "fields": [
+        {
+            "fieldName": "length",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "limit",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "events",
+            "otherEntityRelationshipName": "distances",
+            "relationshipName": "events"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "userRegistration",
+            "otherEntityRelationshipName": "event",
+            "relationshipName": "userRegistration",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200101205048",
+    "entityTableName": "distance",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
