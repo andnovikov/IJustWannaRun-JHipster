@@ -1,0 +1,75 @@
+entity Events {
+	name String,
+    date ZonedDateTime,
+    regStart ZonedDateTime,
+    regEnd ZonedDateTime,
+    status EventStatus,
+    kind EventKind,
+    url String
+}
+
+entity Distance {
+	length Float,
+    limit Integer
+}
+
+entity UserRegistration {
+	event Distance,
+    regDate ZonedDateTime,
+    regNumber Int
+}
+
+entity Region {
+	regionName String
+}
+
+entity Country {
+	countryName String
+}
+
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+enum EventStatus {
+    PLAN, OPEN, CLOSED, COMPLETE
+}
+
+enum EventKind {
+	RUNNING, SWIMMING, BIKE, TRIATHLON, SKIING
+}
+
+relationship OneToOne {
+	Country{region} to Region
+}
+
+relationship OneToOne {
+	Location{country} to Country
+}
+
+relationship OneToMany {
+	Events{location} to Location
+}
+
+relationship OneToMany {
+	UserRegistration{event} to Distance
+}
+
+relationship OneToMany {
+	Distance to Events{distances}
+}
+
+// Set pagination options
+paginate Events with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
